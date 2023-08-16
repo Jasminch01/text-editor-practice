@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor | Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/5de757eba6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="flex justify-center items-center mt-20">
+        <div class="bg-sky-500 px-4 py-3 md:p-8 w-[90%]  md:w-[50%]">
+            <h3 class="text-3xl font-medium text-white text-center mb-5" id="text">Text Editor</h3>
+            <div class="bg-sky-300 pt-5 pb-0">
+                <div class="flex justify-around">
+                    <div>
+                        <i id="bold" class="fa-solid fa-bold cursor-pointer" style="color: #ffffff;"></i>
+                        <i id="italic" class="fa-solid fa-italic cursor-pointer" style="color: #ffffff;"></i>
+                        <i id="underline" class="fa-solid fa-underline cursor-pointer" style="color: #ffffff;"></i>
+                        <i id="line-through" class="fa-solid fa-strikethrough cursor-pointer" style="color: #ffffff;"></i>
+                    </div>
+                    <div>
+                        <i id="align-right" class="fa-solid fa-align-right cursor-pointer" style="color: #ffffff;"></i>
+                        <i id="align-center" class="fa-solid fa-align-center cursor-pointer" style="color: #ffffff;"></i>
+                        <i id="align-justify" class="fa-solid fa-align-justify cursor-pointer" style="color: #ffffff;"></i>
+                        <i id="align-left" class="fa-solid fa-align-left cursor-pointer" style="color: #ffffff;"></i>
+                    </div>
+                    <div>
+                        <input type="number" id="num-input" value="16" class="w-10">
+                    </div>
+                    <div>
+                        <input type="color" name="" id="color-input" class="border">
+                    </div>
+                </div>
+                <textarea name="" id="text-area" cols="150" rows="20" class="border-2 focus:outline-none w-full px-5 resize-none h-[400px] md:h-[600px]"></textarea>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
